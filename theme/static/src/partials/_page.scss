@@ -1,0 +1,49 @@
+// Import the non-default scaffolding module to help us get started.
+@import "blueprint/scaffolding";
+@import "blueprint/liquid";
+
+// This configuration will only apply the
+// blueprint styles to pages with a body class of "bp"
+// This makes it easier to have pages without blueprint styles
+// when you're using a single/combined stylesheet.
+
+body.blueprint {
+  @include blueprint-typography(true);
+  @include blueprint-utilities;
+  @include blueprint-debug;
+  @include blueprint-interaction; }
+
+.container {
+  @include container; }
+
+.a1 {
+    @include column(24);
+    @include last;
+    background: #F82;
+}
+.b1 {
+    @include column(12);
+    background: #F82;
+}
+.b2 {
+    @include column(12);
+    @include last;
+    background: #8F2;
+}
+.c1 {
+    @include column(6);
+    background: #F82;
+}
+.c2 {
+    @include column(6);
+    background: #8F2;
+}
+.c3 {
+    @include column(6);
+    background: #F82;
+}
+.c4 {
+    @include column(6);
+    @include last;
+    background: #8F2;
+}

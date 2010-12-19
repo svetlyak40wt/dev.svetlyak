@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="{% block lang %}{% endblock %}">
+    <head>
+        <title>{% block title %}{{ SITENAME }}{%endblock%}</title>
+        <meta charset="utf-8" />
+        <link href="{{ SITEURL }}/theme/css/screen.css" media="screen, projection" rel="stylesheet" type="text/css" />
+        <link href="{{ SITEURL }}/theme/css/print.css" media="print" rel="stylesheet" type="text/css" />
+        <!--[if lt IE 8]>
+            <link href="{{ SITEURL }}/theme/css/ie.css" media="screen, projection" rel="stylesheet" type="text/css" />
+        <![endif]-->
+        <link href="{{ SITEURL }}/feeds/all.atom.xml" type="application/atom+xml" rel="alternate" title="{{ SITENAME }} ATOM Feed" />
+    </head>
+    <body class="blueprint">
+        <div class="container">
+            <header>
+                <div class="a1">a1</div>
+                <div class="b1">b1</div>
+                <div class="b2">b2</div>
+                <div class="c1">c1</div>
+                <div class="c2">c2</div>
+                <div class="c3">c3</div>
+                <div class="c4">c4</div>
+
+                <h1><a href="{{ SITEURL }}">{{ SITENAME }}</a></h1>
+                {% if SITESUBTITLE %}<h2>{{ SITESUBTITLE }}</h2>{% endif %}
+                <nav>
+                    <ul class="categories">
+                        {% for cat, null in categories %}
+                        <li {% if cat == category %}class="active"{% endif %}><a href="{{ SITEURL }}/category/{{ cat }}.html">{{ cat }}</a></li>
+                        {% endfor %}
+                    </ul>
+                    <ul class="pages">
+                    {% for page in PAGES %}
+                        <li><a href="{{ SITEURL }}/pages/{{ page.url }}">{{ page.title }}</a></li>
+                    {% endfor %}
+                    </ul>
+                </nav>
+            </header>
+
+            {% block content %}{% endblock %}
+
+            <footer class="copyright vcard">Author <a class="fn url" href="http://dev.svetlyak.ru">Alexander Artemenko</a>, <a rel="license" href="http://creativecommons.org/licenses/by-sa/3.0/us/">some rights reserved</a>. Powered by <a href="http://alexis.notomyidea.org/pelican/">pelican</a></footer>
+        </div>
+        <script type="text/javascript" src="{{ SITEURL }}/theme/js/modulargrid_debug.js"></script>
+    </body>
+</html>

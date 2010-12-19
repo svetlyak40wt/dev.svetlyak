@@ -1,0 +1,5 @@
+.*.swp
+output
+env
+.sass-cache
+theme/static/css/

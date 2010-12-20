@@ -16,34 +16,3 @@ body.blueprint {
 .container {
   @include container; }
 
-.a1 {
-    @include column(24);
-    @include last;
-    background: #F82;
-}
-.b1 {
-    @include column(12);
-    background: #F82;
-}
-.b2 {
-    @include column(12);
-    @include last;
-    background: #8F2;
-}
-.c1 {
-    @include column(6);
-    background: #F82;
-}
-.c2 {
-    @include column(6);
-    background: #8F2;
-}
-.c3 {
-    @include column(6);
-    background: #F82;
-}
-.c4 {
-    @include column(6);
-    @include last;
-    background: #8F2;
-}

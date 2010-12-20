@@ -1,0 +1,14 @@
+{% for article in articles %}
+    <article>
+        <header>
+            <p class="published">{{ article.date.strftime('%a %d %B %Y') }}</p>
+            <h1><a href="{{ SITEURL }}/{{ article.url }}">{{ article.title }}</a></h1>
+            <p class="translations">
+            {% for translation in article.translations %}
+                <a href="{{ SITEURL }}/{{ translation.url }}">{{ translation.lang }}</a>
+            {% endfor %}
+            </p>
+        </header>
+        {% if article.description %}<p>{{ article.description }}</p>{% else %}{{ article.summary }}{% endif %}
+    </article>
+{% endfor %}

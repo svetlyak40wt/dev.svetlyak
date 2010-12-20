@@ -1,0 +1,46 @@
+body.blueprint article {
+    > header {
+        @include clearfix;
+        .published, h1{
+            @include column(11);
+            @include prepend(1);
+        }
+        .published {
+            margin-bottom: 0px;
+            font-weight: bold;
+        }
+        .translations {
+            @include column(12);
+            @include last;
+            margin-top: 1.5em;
+        }
+        .tags {
+            @include column(23);
+            @include prepend(1);
+            @include last;
+            margin-top: -1.5em;
+        }
+    }
+    > h1 {
+        font-size: 2em;
+        margin-bottom: 0.75em;
+    }
+    > h2 {
+        font-size: 1.5em;
+        line-height: 1;
+        margin-bottom: 1em;
+    }
+    > h3 {
+        font-size: 1.2em;
+        line-height: 1.25;
+        margin-bottom: 1.25em;
+    }
+}
+
+body.blueprint.index article {
+}
+
+body.blueprint.article article {
+    > header {
+    }
+}

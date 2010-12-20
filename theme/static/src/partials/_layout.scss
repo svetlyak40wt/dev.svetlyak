@@ -1,0 +1,60 @@
+@import "compass/utilities/lists/bullets";
+@import "compass/css3/border-radius";
+
+body {
+    .container {
+        padding-top: 1.5em;
+
+        > header {
+            @include clearfix;
+            margin-bottom: 1.5em;
+            border-bottom: 1px solid gray;
+
+            h1 {
+                @include column(23);
+                @include prepend(1);
+                @include last;
+            }
+            nav {
+                @include clearfix;
+                clear: both;
+
+                ul {
+                    @include column(12);
+                    @include no-bullet;
+                    @include clearfix;
+                    padding: 0;
+
+                    li {
+                        @include column(4);
+                        @include border-radius(0.4em);
+                        background: #DDD;
+                        padding-left: 0.5em;
+
+                        a {color: #333;}
+                        a:visited {color: #333;}
+                    }
+                    li.active {
+                        background: #333;
+                        a {color: #EEE;}
+                        a:visited {color: #EEE;}
+                    }
+                }
+                ul.pages {
+                    @include last;
+                    margin-left: -0.5em;
+                }
+            }
+        }
+        footer {
+            @include clearfix;
+            border-top: 1px solid gray;
+            margin-bottom: 1.5em;
+
+            div {
+                @include column(23);
+                @include prepend(1);
+            }
+        }
+    }
+}

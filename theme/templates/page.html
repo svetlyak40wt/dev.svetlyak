@@ -1,10 +1,20 @@
 {% extends "base.html" %}
-{% block title %}{{ page.title }}{%endblock%}
+
+{% block title %}{{ page.title }} — {{ super() }}{%endblock%}
+
+{% block bodyclass %}{{ super() }} page{% endblock %}
+
 {% block content %}
-    <h1>{{ page.title }}</h1>
-    {{ page.content }}
-    {% for translation in page.translations %}
-        <a href="{{ translation.url }}">{{ translation.lang }}</a>
-    {% endfor %}
+    <article>
+        <header>
+            <h1>{{ page.title }}</h1>
+            <p class="translations">
+            {% for translation in page.translations %}
+                <a href="{{ SITEURL }}/{{ translation.url }}">{{ translation.lang }}</a>
+            {% endfor %}
+            </p>
+        </header>
+        {{ page.content }}
+    </article>
 {% endblock %}
 

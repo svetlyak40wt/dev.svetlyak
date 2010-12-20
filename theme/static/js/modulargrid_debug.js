@@ -2191,7 +2191,7 @@ ModularGrid.init(
 			 * Сама линия сетки начинает рисоваться на (lineHeight + 1) пикселе
 			 * @type Number
 			 */
-			lineHeight: 16,
+			lineHeight: 18,
 
 			// стиль линий шрифтовой сетки
 			/**

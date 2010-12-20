@@ -1,13 +1,40 @@
 {% extends "base.html" %}
-{% block title %}{{ article.title }}{%endblock%}
+
+{% block title %}{{ article.title }} — {{ super() }}{%endblock%}
+
+{% block bodyclass %}{{ super() }} article{% endblock %}
+
 {% block content %}
-    <h1>{{ article.title }}</h1>
-    <div class="info">
-    {% if article.author %}
-     By <a class="url fn" href="#">{{ article.author }}</a>
-    {% endif %}
-     on <a>{{ article.date.strftime('%a %d %B %Y') }}</a>
-     about <a href="{{ SITEURL }}/category/{{ article.category }}.html">{{ article.category }}</a>
-    </div>
-    {{ article.content }}
+    <article>
+        <header>
+            <p class="published">{{ article.date.strftime('%a %d %B %Y') }}</p>
+            <h1>{{ article.title }}</h1>
+            <p class="translations">
+            {% for translation in article.translations %}
+                <a href="{{ SITEURL }}/{{ translation.url }}">{{ translation.lang }}</a>
+            {% endfor %}
+            </p>
+            {% if article.tags %}
+                <p class="tags">
+                Tags: {% for tag in article.tags %}<a href="{{ SITEURL }}/tag/{{ tag }}/">{{ tag }}</a>{% if not loop.last %}, {% endif %}{% endfor %}
+                </p>
+            {% endif %}
+        </header>
+        {{ article.content }}
+
+        {% if DISQUS_SITENAME %}
+        <div class="comments">
+        <h2>Comments !</h2>
+            <div id="disqus_thread"></div>
+            <script type="text/javascript">
+               var disqus_identifier = "{{ article.url }}";
+               (function() {
+               var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+               dsq.src = 'http://{{ DISQUS_SITENAME }}.disqus.com/embed.js';
+               (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+              })();
+            </script>
+        </div>
+        {% endif %}
+    </article>
 {% endblock %}

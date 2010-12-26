@@ -1,7 +1,7 @@
 Title: Буду пробовать http://www.trinhhaianh.com/stream.py/ для обработки логов.
 Slug: stream-py
 Date: 2010-02-16 08:39
-Category: review
+Category: reviews
 Tags: python
 Lang: ru
 

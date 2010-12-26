@@ -12,6 +12,21 @@
         <link href="{{ SITEURL }}/feeds/all" type="application/atom+xml" rel="alternate" title="{{ SITENAME }} (все посты)" />
         <link href="{{ SITEURL }}/feeds/all-en" type="application/atom+xml" rel="alternate" title="{{ SITENAME }} (english posts only)" />
         <link href="{{ SITEURL }}/feeds/all-ru" type="application/atom+xml" rel="alternate" title="{{ SITENAME }} (посты на русском)" />
+
+        {% if GOOGLE_ANALYTICS %}
+        <script type="text/javascript">
+
+          var _gaq = _gaq || [];
+          _gaq.push(['_setAccount', '{{ GOOGLE_ANALYTICS }}']);
+          _gaq.push(['_trackPageview']);
+
+          (function() {
+            var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+            ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+            var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+          })();
+        </script>
+        {% endif %}
     </head>
     <body class="{% block bodyclass %}blueprint{% endblock %}">
         <div class="container">
@@ -38,6 +53,23 @@
         </div>
         {% if DEBUG %}
         <script type="text/javascript" src="{{ SITEURL }}/theme/js/modulargrid_debug.js"></script>
+        {% endif %}
+        {% if YANDEX_METRIKA %}
+        <!-- Yandex.Metrika counter -->
+        <div style="display:none;"><script type="text/javascript">
+        (function(w, c) {
+            (w[c] = w[c] || []).push(function() {
+                try {
+                    w.yaCounter{{ YANDEX_METRIKA }} = new Ya.Metrika({{ YANDEX_METRIKA }});
+                     yaCounter{{ YANDEX_METRIKA }}.clickmap(true);
+                     yaCounter{{ YANDEX_METRIKA }}.trackLinks(true);
+                } catch(e) {}
+            });
+        })(window, 'yandex_metrika_callbacks');
+        </script></div>
+        <script src="//mc.yandex.ru/metrika/watch.js" type="text/javascript" defer="defer"></script>
+        <noscript><div style="position:absolute"><img src="//mc.yandex.ru/watch/2910592" alt="" /></div></noscript>
+        <!-- /Yandex.Metrika counter -->
         {% endif %}
     </body>
 </html>

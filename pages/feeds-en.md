@@ -1,16 +1,14 @@
 Title: Feeds
 Slug: feeds
+Lang: en
 
-This site has feed almost for anything. Just try to add a '/rss/' at the end of some URL.
+There are three feeds on this blog. First of them, contains [all posts][all], english and russian. If there is a russian translation of the post, then only it will be in the feed.
 
-To be more precise, I have a [feed for all posts and links][rss-all], as well, as separate feeds for [text][rss-texts] posts and for [links][rss-links].
+Second feed contains only posts [in Russian][all-ru]. Third — only posts [in English][all-en].
 
-Each post's page has it's own rss feed for all comments on this post.
+It's easy, just add one of these feeds in you favorite RSS reader!
 
-Also, I have separate feeds for each tag or tags combination. For example, you can subscribe to [all links related to python](/links/bytag/python/rss/) or just to [posts about git tips](/blog/bytag/tips+git/rss/).
+[all]: http://dev.svetlyak.ru/feeds/all
+[all-en]: http://dev.svetlyak.ru/feeds/all-en
+[all-ru]: http://dev.svetlyak.ru/feeds/all-ru
 
-It's easy, just add these feeds in you favorite RSS reader!
-
-[rss-all]: http://feeds2.feedburner.com/LazyCrazyCoder
-[rss-texts]: http://feeds2.feedburner.com/LazyCrazyCoder/texts
-[rss-links]: http://feeds2.feedburner.com/LazyCrazyCoder/links

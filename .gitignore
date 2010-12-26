@@ -5,6 +5,5 @@ output
 env
 .sass-cache
 theme/static/css/
-pages
 pip-log.txt
 .DS_Store

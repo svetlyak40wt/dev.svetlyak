@@ -10,7 +10,7 @@
             <h1>{{ page.title }}</h1>
             <p class="translations">
             {% for translation in page.translations %}
-                <a href="{{ SITEURL }}/{{ translation.url }}">{{ translation.lang }}</a>
+                <a href="{{ SITEURL }}/pages/{{ translation.url }}">{{ translation.lang }}</a>
             {% endfor %}
             </p>
         </header>

@@ -7,3 +7,5 @@ env
 theme/static/css/
 pip-log.txt
 .DS_Store
+ctags
+.vim/ide.session

@@ -13,4 +13,4 @@ Lang: ru
 Хотя хз. как считаете, что лучше, статика или динамика?
 
 [1]: http://aartemenko.com
-[Pelican]: https://github.com/solsticedhiver/pelican
+[Pelican]: https://github.com/ametaireau/pelican

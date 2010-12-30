@@ -9,16 +9,17 @@
         <header>
             <p class="published">{{ article.date.strftime('%a %d %B %Y') }}</p>
             <h1>{{ article.title }}</h1>
-            <p class="translations">
-            {% for translation in article.translations %}
-                <a href="{{ SITEURL }}/{{ translation.url }}">{{ translation.lang }}</a>
-            {% endfor %}
-            </p>
+            <p id="share_buttons"></p>
             {% if article.tags %}
                 <p class="tags">
                 Tags: {% for tag in article.tags %}<a href="{{ SITEURL }}/tag/{{ tag }}/">{{ tag }}</a>{% if not loop.last %}, {% endif %}{% endfor %}
                 </p>
             {% endif %}
+            <p class="translations">
+            {% for translation in article.translations %}
+                <a href="{{ SITEURL }}/{{ translation.url }}">{{ translation.lang }}</a>
+            {% endfor %}
+            </p>
         </header>
         {{ article.content }}
 
@@ -36,5 +37,21 @@
             </script>
         </div>
         {% endif %}
+
+        <script type="text/javascript" src="//yandex.st/share/share.js" charset="utf-8"></script>
+        <script type="text/javascript">
+        new Ya.share({
+            'element': 'share_buttons',
+            'elementStyle': {
+                'type': 'button',
+                'linkIcon': true,
+                'border': false,
+                'quickServices': ['twitter', 'facebook', 'lj', 'yaru']
+            },
+            'popupStyle': {
+                'copyPasteField': true
+            }
+         });
+        </script>
     </article>
 {% endblock %}

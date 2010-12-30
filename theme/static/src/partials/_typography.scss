@@ -9,15 +9,20 @@ body.blueprint article {
             margin-bottom: 0px;
             font-weight: bold;
         }
+        #share_buttons {
+            @include column(10);
+            @include last;
+            margin-left: -1em;
+            margin-top: 0.7em;
+        }
         .translations {
             @include column(12);
             @include last;
-            margin-top: 1.5em;
+            margin-top: -1.5em;
         }
         .tags {
-            @include column(23);
+            @include column(11);
             @include prepend(1);
-            @include last;
             margin-top: -1.5em;
         }
     }
@@ -38,9 +43,9 @@ body.blueprint article {
 }
 
 body.blueprint.index article {
-}
-
-body.blueprint.article article {
     > header {
+        .translations {
+            margin-top: 1.5em;
+        }
     }
 }

@@ -8,7 +8,7 @@ devel-rm:
 
 devel: env/bin/pelican
 	env/bin/pelican -s devel.conf .
-	rsync -avz output/ --exclude .sass-cache debian:www/dev.svetlyak/www/
+	rsync -avz output/ --exclude .sass-cache --exclude '.*.swp' --exclude 'theme/src' debian:www/dev.svetlyak/www/
 	rsync -avz configs/ debian:www/dev.svetlyak/configs/
 
 reinstall-production: production-rm production
@@ -19,7 +19,7 @@ production-rm:
 
 production: env/bin/pelican
 	env/bin/pelican -s production.conf .
-	rsync -avz --exclude .sass-cache --exclude '.*.swp' output/ locum:www/dev.svetlyak/www/
+	rsync -avz --exclude .sass-cache --exclude '.*.swp' --exclude 'theme/src' output/ locum:www/dev.svetlyak/www/
 	rsync -avz --exclude '.*.swp' configs/ locum:www/dev.svetlyak/configs/
 
 env:

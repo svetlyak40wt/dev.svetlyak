@@ -3,5 +3,14 @@
 {% block bodyclass %}{{ super() }} index{% endblock %}
 
 {% block content %}
+    {% set articles = articles[:10] %}
     {% include "utils/article_summaries.html" %}
+
+    <div class="cloud">
+        <ul>
+        {% for tag in tag_cloud %}
+            <li class="tag-{{ tag.1 }}"><a href="/tag/{{ tag.0 }}/">{{ tag.0 }}</a></li>
+        {% endfor %}
+        </ul>
+    </div>
 {% endblock %}

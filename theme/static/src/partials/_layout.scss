@@ -11,8 +11,8 @@ body {
             border-bottom: 1px solid gray;
 
             h1 {
-                @include column(23);
-                @include prepend(1);
+                @include column(21);
+                @include prepend(3);
                 @include last;
             }
             nav {
@@ -52,8 +52,9 @@ body {
             margin-bottom: 1.5em;
 
             div {
-                @include column(23);
-                @include prepend(1);
+                @include column(21);
+                @include prepend(3);
+                @include last;
             }
         }
     }

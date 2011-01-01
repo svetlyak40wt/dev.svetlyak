@@ -1,4 +1,6 @@
-body.blueprint article {
+@import "compass/utilities/lists/bullets";
+
+body.blueprint.article article {
     > header {
         @include clearfix;
         .published, h1{
@@ -42,10 +44,60 @@ body.blueprint article {
     }
 }
 
-body.blueprint.index article {
+body.blueprint article.summary {
     > header {
+        @include clearfix;
+        .published {
+            @include column(3);
+            @include prepend(0);
+            text-align: center;
+            font-weight: bold;
+        }
+        h1 {
+            @include column(21);
+            @include prepend(0);
+            @include last;
+        }
         .translations {
-            margin-top: 1.5em;
+            display: inline;
+            font-size: 0.5em;
+            position: relative;
+            top: -1em;
+        }
+    }
+}
+
+body.blueprint {
+    div.cloud {
+        @include clearfix;
+
+        ul {
+            @include column(18);
+            @include prepend(3);
+            @include append(3);
+            @include last;
+            @include no-bullet;
+
+            li {
+                margin-right: 0.5em;
+                float: left;
+            }
+            .tag-1 {
+                font-size: 3em;
+                line-height: 1;
+            }
+            .tag-2 {
+                font-size: 2em;
+                line-height: 1.5;
+            }
+            .tag-3 {
+                font-size: 1.5em;
+                line-height: 2;
+            }
+            .tag-4 {
+                font-size: 1em;
+                line-height: 3;
+            }
         }
     }
 }

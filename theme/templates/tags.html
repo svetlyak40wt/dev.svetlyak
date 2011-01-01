@@ -1,0 +1,11 @@
+{% extends "base.html" %}
+
+{% block title %}{{ super() }} :: Tags{%endblock%}
+
+{% block content %}
+    <ul class="cloud">
+    {% for tag in tag_cloud %}
+        <li class="tag-{{ tag.1 }}"><a href="/tag/{{ tag.0 }}/">{{ tag.0 }}</a></li>
+    {% endfor %}
+    </ul>
+{% endblock %}

@@ -1,0 +1,5 @@
+User-agent: *
+Disallow: /category/
+Disallow: /tag/
+Allow: *
+Host: dev.svetlyak.ru

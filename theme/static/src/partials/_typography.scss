@@ -68,6 +68,10 @@ body.blueprint article.summary {
 }
 
 body.blueprint {
+    form.yaform__form table {
+        margin-bottom: 0px;
+    }
+
     div.cloud {
         @include clearfix;
 
@@ -101,3 +105,4 @@ body.blueprint {
         }
     }
 }
+

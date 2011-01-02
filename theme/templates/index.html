@@ -3,8 +3,10 @@
 {% block bodyclass %}{{ super() }} index{% endblock %}
 
 {% block content %}
-    {% set articles = articles[:10] %}
+    {% set articles = articles[:5] %}
     {% include "utils/article_summaries.html" %}
+
+    <div class="yandexform" onclick="return {type: 3, logo: 'rb', arrow: false, webopt: false, websearch: false, bg: '#FFFFFF', fg: '#000000', fontsize: 16, suggest: false, site_suggest: true, encoding: ''}"><form action="/search/" method="get"><input type="hidden" name="searchid" value="498444"/><input name="text"/><input type="submit" value="Найти"/></form></div><script type="text/javascript" src="http://site.yandex.net/load/form/1/form.js" charset="utf-8"></script>
 
     <div class="cloud">
         <ul>

@@ -1,0 +1,7 @@
+{% extends "base.html" %}
+
+{% block bodyclass %}{{ super() }} search{% endblock %}
+
+{% block content %}
+    <div id="yandex-results-outer" onclick="return {encoding: ''}"></div><script type="text/javascript" src="http://site.yandex.net/load/site.js" charset="utf-8"></script>
+{% endblock %}

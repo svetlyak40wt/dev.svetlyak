@@ -14,7 +14,10 @@ Lang: ru
 
 Ну ладно, думаю, наверное тож какой-нибудь индус писал, как и logging.py.
 
-![](http://farm1.static.flickr.com/90/275450585_2c5cc73085_o.jpg)
+![][Resized]
 
 Полез в SVN, сделал annotate. И что вы думаете? Нет! Белые люди писали, даже
 сам Guido van Rossum к этому руку приложил.
+
+[Image]: http://farm1.static.flickr.com/90/275450585_2c5cc73085_o.jpg
+[Resized]: http://resizer.co/?image=http%3A%2F%2Ffarm1.static.flickr.com%2F90%2F275450585_2c5cc73085_o.jpg&w=600

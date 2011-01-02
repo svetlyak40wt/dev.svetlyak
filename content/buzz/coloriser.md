@@ -17,7 +17,7 @@ Lang: ru
 Поэтому я сел и написал на Python [простой скрипт colorize][1]. Который делает
 только то, что положено — расцвечивает лог.
 
-![](http://img-fotki.yandex.ru/get/4701/alexander-artemenko.e/0_6fc75_6fc81097_L)
+![][Image]
 
 Использовать его очень просто. Сначала надо установить скрипт любым из
 доступных способов, например через easy_install, pip или buildout.
@@ -32,4 +32,4 @@ Lang: ru
 не переусложнять скрипт всякими настройками.
 
 [1]: https://github.com/svetlyak40wt/colorize
-
+[Image]: http://img-fotki.yandex.ru/get/4701/alexander-artemenko.e/0_6fc75_6fc81097_L

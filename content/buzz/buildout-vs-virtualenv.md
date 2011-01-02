@@ -15,7 +15,7 @@ Lang: ru
 использую djangorecipe, который умеет и джангу нужной версии поставить, и
 manage.py настроить и даже скрипт для запуска тестов.
 
-![](http://farm4.static.flickr.com/3008/2454023778_710832f3a5_o.jpg)
+![][Resized]
 
 На pypi можно найти море рецептов на все случаи жизни, например для установки
 пакетов из различных VCS и DVCS. Впрочем, использовать source control и pip
@@ -23,3 +23,6 @@ manage.py настроить и даже скрипт для запуска те
 
 Обычно, для сложных проектов я использую buildout, а virtualenv/pip — в
 случаях, когда надо "потыкать" какую-нибудь библиотечку.
+
+[Image]: http://farm4.static.flickr.com/3008/2454023778_710832f3a5_o.jpg
+[Resized]: http://resizer.co/?image=http%3A%2F%2Ffarm4.static.flickr.com%2F3008%2F2454023778_710832f3a5_o.jpg&w=600

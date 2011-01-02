@@ -11,7 +11,7 @@ Lang: ru
 Я провел расследование, покопался в исходниках, поигрался с MySQL консолью и
 выяснил следующее.
 
-![](http://farm3.static.flickr.com/2283/1831151460_03703bba9c_o.jpg)
+![][Resized]
 
 Во-первых, `SELECT FOR UPDATE` нормально работает только если в `WHERE` указаны
 поля для которых построены индексы.
@@ -24,3 +24,6 @@ Lang: ru
 коммит, так как для соединения не был проставлен флаг dirty.
 
 В-четвертых, если на полях из `WHERE` есть индексы, то всё хорошо.
+
+[Image]: http://farm3.static.flickr.com/2283/1831151460_03703bba9c_o.jpg
+[Resized]: http://resizer.co/?image=http%3A%2F%2Ffarm3.static.flickr.com%2F2283%2F1831151460_03703bba9c_o.jpg&w=600

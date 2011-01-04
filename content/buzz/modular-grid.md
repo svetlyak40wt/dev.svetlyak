@@ -17,4 +17,4 @@ Lang: ru
 [https://github.com/aishek/modulargrid][1]
 
 [1]: https://github.com/aishek/modulargrid
-[Pelican]: https://github.com/solsticedhiver/pelican
+[Pelican]: https://github.com/svetlyak40wt/pelican

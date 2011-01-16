@@ -1,4 +1,4 @@
-Title: Социальные закладки на GitHub
+Title: Social bookmarks at the GitHub
 Slug: gitmarks
 Date: 2011-01-13 11:17
 Category: review

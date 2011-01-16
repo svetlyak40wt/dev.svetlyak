@@ -3,5 +3,7 @@
 {% block bodyclass %}{{ super() }} search{% endblock %}
 
 {% block content %}
+    <div class="yandexform" onclick="return {type: 3, logo: 'rb', arrow: false, webopt: false, websearch: false, bg: '#FFFFFF', fg: '#000000', fontsize: 16, suggest: false, site_suggest: true, encoding: ''}"><form action="/search/" method="get"><input type="hidden" name="searchid" value="498444"/><input name="text"/><input type="submit" value="Найти"/></form></div><script type="text/javascript" src="http://site.yandex.net/load/form/1/form.js" charset="utf-8"></script>
+
     <div id="yandex-results-outer" onclick="return {encoding: ''}"></div><script type="text/javascript" src="http://site.yandex.net/load/site.js" charset="utf-8"></script>
 {% endblock %}

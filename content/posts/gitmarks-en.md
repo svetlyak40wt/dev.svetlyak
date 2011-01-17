@@ -5,7 +5,7 @@ Category: review
 Tags: python, git
 Lang: en
 
-Today I want to tell you about a quite interesting project from the GitHub. It
+Today I want to tell you about an interesting project from the GitHub. It
 is developed by Hilary Mason and called [gitmarks][].
 
 This project allows to save URLs and share them with other GitHub users. For
@@ -24,21 +24,21 @@ However, this project has a few shortcomings.
 First, the code looks ugly because Hilary ignores [naming conventions][pep-8], accepted
 by the Python community.
 
-Secondly, existing documentation says nothing were to store bookmarks. Because of that,
+Secondly, existing documentation says nothing where to store bookmarks. Because of that,
 many people start to fork the repository and to save bookmarks in it. Look at
 the [network graph][graph], it is quite cluttered with bookmark commits and it
 is very hard to find code changes in this heap.
 
-It worse to enforce code and content separation, to make script development
+It's worse to enforce the code and content separation, to make script development
 easier.
 
 And finally, there is a batch of small things which are inconvenient. For
-example, people could comment bookmarks of each other, using the GitHub's
-commit comments. However, right now commit page looks very scary because
-it include a full HTML downloaded from the bookmarked URL. To avoid this
+example, people could comment bookmarks of one another, using the GitHub's
+commit comments. However, the commit page looks very scary because
+it includes a full HTML downloaded from the bookmarked URL. To avoid this
 HTML have to be converted into the readable text.
 
-I hope, this project will evolve to the usable distributed bookmarks service.
+I hope, this project will evolve to the usable distributed bookmark service.
 
 [gitmarks]: https://github.com/hmason/gitmarks/
 [graph]: https://github.com/hmason/gitmarks/network

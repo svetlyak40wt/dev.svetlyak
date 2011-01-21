@@ -1,7 +1,7 @@
 Title: Debugger With Blackjack
 Slug: debugger-with-blackjack
 Date: 2011-01-18 14:13
-Category: review
+Category: reviews
 Tags: python
 Lang: en
 

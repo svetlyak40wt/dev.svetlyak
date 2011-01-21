@@ -1,7 +1,7 @@
 Title: Social bookmarks at the GitHub
 Slug: gitmarks
 Date: 2011-01-13 11:17
-Category: review
+Category: reviews
 Tags: python, git
 Lang: en
 

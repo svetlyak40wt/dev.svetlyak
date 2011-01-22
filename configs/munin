@@ -1,0 +1,7 @@
+[nginx_dev_svetlyak]
+env.logfile /home/art/log/nginx/dev-svetlyak-access.log
+env.title Nginx dev.svetlyak.ru
+
+[nginxe_dev_svetlyak]
+env.logfile /home/art/log/nginx/dev-svetlyak-access.log
+env.title Nginx dev.svetlyak.ru 500

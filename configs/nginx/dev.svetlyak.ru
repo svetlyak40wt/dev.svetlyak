@@ -5,8 +5,14 @@ server {
 
     location / {
         root /home/art/www/dev.svetlyak/www;
+        rewrite ^/pavatar.png$ http://media.svetlyak.ru/pavatar.png;
+        add_header X-Pavatar http://media.svetlyak.ru/pavatar.png;
+
+        rewrite ^/favicon.png$ /favicon.ico permanent;
         rewrite ^/favicon.ico$ /theme/img/favicon.ico;
+
         rewrite ^/robots.txt$  /theme/robots.txt;
+        rewrite ^/$       /index.html break;
         rewrite ^/(.+)/$       /$1.html break;
         rewrite ^/([^/]+)$        /$1/ permanent;
         rewrite ^/(tag|category)/([^/]+)$        /$1/$2/ permanent;

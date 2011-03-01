@@ -1,4 +1,4 @@
-Title: Загадочные клюки Python+Twisted
+Title: Загадочные глюки Python+Twisted
 Slug: misterious-twisted
 Date: 2010-09-02 18:52
 Category: texts

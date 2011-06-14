@@ -20,5 +20,7 @@ You can find a short tutorial in the README file, on the [project's page at GitH
 
 Code is licensed under the New BSD License, so feel free [to fork][gtdzen] it and use it. But I would be very appreciated if you send me some patches.
 
+**Update**: I don't support GTDZen anymore and store my hierarhical task list in the [VimOutliner](http://www.vimoutliner.org/).
+
 [gtdzen]: https://github.com/svetlyak40wt/gtdzen/
 [gtd]: http://en.wikipedia.org/wiki/Getting_Things_Done

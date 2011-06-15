@@ -7,7 +7,7 @@ devel-rm:
 	ssh debian 'rm -fr www/dev.svetlyak/www'
 
 devel: env/bin/pelican
-	env/bin/pelican -s devel.conf .
+	env/bin/pelican -s devel.conf content
 	rsync -avz output/ --exclude .sass-cache --exclude '.*.swp' --exclude 'theme/src' debian:www/dev.svetlyak/www/
 	rsync -avz configs/ debian:www/dev.svetlyak/configs/
 
@@ -18,7 +18,7 @@ production-rm:
 	ssh locum 'rm -fr www/dev.svetlyak/www'
 
 production: env/bin/pelican
-	env/bin/pelican -s production.conf .
+	env/bin/pelican -s production.conf content
 	rsync -avz --exclude .sass-cache --exclude '.*.swp' --exclude 'theme/src' output/ locum:www/dev.svetlyak/www/
 	rsync -avz --exclude '.*.swp' configs/ locum:www/dev.svetlyak/configs/
 

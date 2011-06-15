@@ -1,11 +1,11 @@
-Title: Helper to use SELECT FOR UPDATE in Django
+Title: Используем SELECT FOR UPDATE в Django
 Slug: select-update-django
 Date: 2010-11-16 13:18
 Tags: django, sql
 Category: texts
-Lang: en
+Lang: ru
 
-Just wrote a simple helper to use SELECT FOR UPDATE construction in django:
+Только что написал простой хелпер для использования выражения `SELECT FOR UPDATE` в Django:
 
     :::python
     from django.db import DEFAULT_DB_ALIAS
@@ -22,3 +22,4 @@ Just wrote a simple helper to use SELECT FOR UPDATE construction in django:
         """
         sql, params = queryset.query.get_compiler(DEFAULT_DB_ALIAS).as_sql()
         return queryset.model._default_manager.raw(sql + ' FOR UPDATE', params)
+

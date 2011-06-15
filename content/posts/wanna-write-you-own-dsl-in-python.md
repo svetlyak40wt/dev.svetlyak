@@ -2,7 +2,7 @@ Title: Wanna write you own DSL in python?
 Slug: wanna-write-you-own-dsl-in-python
 Date: 2008-10-08 10:58
 Tags: python,presentation
-Category: texts
+Category: links
 Lang: en
 Description: 
 

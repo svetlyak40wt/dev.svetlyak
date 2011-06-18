@@ -4,9 +4,9 @@ Date: 2008-11-25 11:36
 Tags: bash, fun
 Category: texts
 Lang: en
-Description: A fun contest — to implementat a basic program in any language.
+Description: A fun contest — to implement a basic program in any language.
 
-Today, Eric Florenzano starts [a funny contests][list]. He suggest the idea for new blogging game.
+Today, Eric Florenzano started [a funny contest][list]. He suggested the idea for new blogging game.
 
 Rules are quite simple:
 

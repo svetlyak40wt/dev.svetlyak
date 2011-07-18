@@ -3,14 +3,14 @@ Slug: disassembler-python-byte-code
 Date: 2009-03-20 12:16
 Tags: python, optimization
 Category: texts
-Lang: en
-Description: A short overview of `dis` python mudule.
+Lang: ru
+Description: Краткий обзор модуля `dis` в Python.
 
-Thanks to [StackOverflow][stack-post], I have discovered an interesting module in python's library — `dis`.
+Благодаря [StackOverflow][stack-post], я обнаружил интересный модуль в библиотеке языка Python - `dis`.
 
-It is a disassembler of python byte code into mnemonics.
+Это дизассемблер Python байт-кода в мнемоники.
 
-For example, we can look into a functions which create dicts:
+Например, мы можем заглянуть внутрь двух функций, создающих словари:
 
     :::python
     >>> import dis
@@ -42,6 +42,6 @@ For example, we can look into a functions which create dicts:
                  15 CALL_FUNCTION          512
                  18 RETURN_VALUE
 
-Here, `dis` shows you, that `dict` is a function call, whereas `{}` is a pure python syntax construction. I think, that this module can be useful when you in doubt, why some constructions are more expensive than others.
+Здесь, `dis` показывает, что `dict` является вызовом функции, тогда как `{}` является чисто синтаксической конструкции в Python. Думаю, этот модуль может быть полезен, когда вы сомневаетесь, какая из конструкций являются более дорогостоящей.
 
 [stack-post]: http://stackoverflow.com/questions/664118/whats-the-difference-between-dict-and

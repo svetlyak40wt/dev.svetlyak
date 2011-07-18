@@ -10,6 +10,6 @@ May be you already know about the [Django Dash][django-dash] competition which w
 
 I hope, that I could participate in this funny event. My command's name is *AntiСhaos* and I'll be working on interesting project. I intending to implement a Visual Tags Organizer, with support of Drag&Drop, Undo, etc..
 
-My project will consist from two parts: Javascript frontend code and reusable django backend. I'll try to make these parts as independed, as it possible, to make other backends available too. If this project will have success, then we all get powerful tool to organize your site's staff which uses django-tagging. 
+My project will consist from two parts: Javascript frontend code and reusable django backend. I'll try to make these parts as independed, as it possible, to make other backends available too. If this project will have success, then we all get powerful tool to organize your site's staff which uses `django-tagging`.
 
 [django-dash]: http://djangodash.com/

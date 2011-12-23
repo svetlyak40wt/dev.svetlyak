@@ -2,7 +2,7 @@ Title: Github Trends
 Slug: github-trends
 Date: 2011-04-05 10:29
 Category: reviews
-Tags: git
+Tags: git, github
 Lang: ru
 
 Знаете, какой мой основной паттерн использования GitHub? Помимо хранения в нем кода своих проектиков, конечно.
@@ -23,5 +23,5 @@ Lang: ru
 
 
 [github-trends]: https://github.com/oscardelben/github-trends/
-[github-trends-web]: http://github-trends.oscardelben.com/
+[github-trends-web]: 3/
 [gh]: https://github.com/languages/Python

@@ -4,12 +4,12 @@ reinstall-devel: devel-rm devel
 
 devel-rm:
 	rm -fr output
-	ssh debian 'rm -fr www/dev.svetlyak/www'
+	ssh ubuntu 'rm -fr www/dev.svetlyak/www'
 
 devel: env/bin/pelican
 	env/bin/pelican -s devel.conf content
-	rsync -avz output/ --exclude .sass-cache --exclude '.*.swp' --exclude 'theme/src' debian:www/dev.svetlyak/www/
-	rsync -avz configs/ debian:www/dev.svetlyak/configs/
+	rsync -avz output/ --exclude .sass-cache --exclude '.*.swp' --exclude 'theme/src' ubuntu:www/dev.svetlyak/www/
+	rsync -avz configs/ ubuntu:www/dev.svetlyak/configs/
 
 reinstall-production: production-rm production
 

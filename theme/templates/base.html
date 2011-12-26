@@ -67,15 +67,14 @@
         (function(w, c) {
             (w[c] = w[c] || []).push(function() {
                 try {
-                    w.yaCounter{{ YANDEX_METRIKA }} = new Ya.Metrika({{ YANDEX_METRIKA }});
-                     yaCounter{{ YANDEX_METRIKA }}.clickmap(true);
-                     yaCounter{{ YANDEX_METRIKA }}.trackLinks(true);
-                } catch(e) {}
+                    w.yaCounter{{ YANDEX_METRIKA }} = new Ya.Metrika({id:{{ YANDEX_METRIKA }}, enableAll: true, webvisor:true});
+                }
+                catch(e) { }
             });
-        })(window, 'yandex_metrika_callbacks');
+        })(window, "yandex_metrika_callbacks");
         </script></div>
         <script src="//mc.yandex.ru/metrika/watch.js" type="text/javascript" defer="defer"></script>
-        <noscript><div style="position:absolute"><img src="//mc.yandex.ru/watch/2910592" alt="" /></div></noscript>
+        <noscript><div><img src="//mc.yandex.ru/watch/{{ YANDEX_METRIKA }}" style="position:absolute; left:-9999px;" alt="" /></div></noscript>
         <!-- /Yandex.Metrika counter -->
         {% endif %}
     </body>

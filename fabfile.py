@@ -23,7 +23,7 @@ def setup():
 
 
 def deploy():
-    local('env/bin/pelican -s devel.conf content')
+    local('env/bin/pelican -s {0}.conf content'.format(env.environment))
 
     if env.environment == 'production':
         local("rsync -avz --exclude .sass-cache --exclude '.*.swp' --exclude 'theme/src' output/ amazon:www/dev.svetlyak/www/")

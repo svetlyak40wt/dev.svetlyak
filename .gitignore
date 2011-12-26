@@ -9,3 +9,4 @@ pip-log.txt
 .DS_Store
 ctags
 .vim/ide.session
+*.egg-info

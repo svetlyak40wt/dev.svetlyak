@@ -26,4 +26,5 @@ env:
 	virtualenv env --python=python2.6
 
 env/bin/pelican: env
-	env/bin/easy_install pelican
+	./bootstrap.sh
+	#env/bin/easy_install pelican

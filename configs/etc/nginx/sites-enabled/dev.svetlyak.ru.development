@@ -1,0 +1,21 @@
+server {
+    listen 8000;
+    server_name dev-dev.svetlyak.ru;
+    access_log /home/art/log/nginx/dev-svetlyak-access.log;
+
+    location / {
+        root /vagrant/dev.svetlyak.ru/output;
+        rewrite ^/pavatar.png$ http://media.svetlyak.ru/pavatar.png;
+        add_header X-Pavatar http://media.svetlyak.ru/pavatar.png;
+
+        rewrite ^/favicon.png$ /favicon.ico permanent;
+        rewrite ^/favicon.ico$ /theme/img/favicon.ico;
+
+        rewrite ^/robots.txt$  /theme/robots.txt;
+        rewrite ^/$       /index.html break;
+        rewrite ^/(.+)/$       /$1.html break;
+        rewrite ^/([^/]+)$        /$1/ permanent;
+        rewrite ^/(tag|category)/([^/]+)$        /$1/$2/ permanent;
+        rewrite ^/feeds/([^.]+)$ http://feeds.feedburner.com/dev-svetlyak/$1;
+    }
+}

@@ -24,8 +24,8 @@ Lang: ru
     REGEXES = tuple((re.compile(line), func) for line, func in REGEXES)
 
     def switch(text_to_check, regexes, default):
-        for line, func in re:
-            match = line.match(blah)
+        for line, func in regexes:
+            match = line.match(text_to_check)
             if match is not None:
                 func(match, line)
                 break

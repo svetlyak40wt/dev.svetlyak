@@ -1,0 +1,10 @@
+How to update CSS
+-----------------
+
+    cd theme/static
+    /opt/ruby/bin/compass compile
+
+How to publish
+--------------
+
+    fab production deploy

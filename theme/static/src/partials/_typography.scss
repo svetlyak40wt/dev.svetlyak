@@ -1,4 +1,4 @@
-@import "compass/utilities/lists/bullets";
+@import "compass/typography/lists/bullets";
 
 body.blueprint.article article {
     > header {
@@ -41,6 +41,11 @@ body.blueprint.article article {
         font-size: 1.2em;
         line-height: 1.25;
         margin-bottom: 1.25em;
+    }
+
+    ul, li ul, ol, li ol,
+    li p {
+        margin-bottom: 0.8em;
     }
 }
 

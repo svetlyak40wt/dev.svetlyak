@@ -2,7 +2,7 @@ Title: Link Roundup #1
 Slug: link-roundup-1
 Date: 2012-04-16 12:54
 Category: texts
-Tags: python
+Tags: python, roundup
 Lang: ru
 
 Решил делать еженедельные подборки ссылок на разные темы. Это первый такой пост.

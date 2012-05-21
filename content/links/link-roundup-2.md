@@ -1,7 +1,7 @@
 Title: Link Roundup #2
 Slug: link-roundup-2
 Date: 2012-04-23 13:15
-Category: texts
+Category: links
 Tags: python, roundup
 Lang: ru
 

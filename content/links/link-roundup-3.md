@@ -1,7 +1,7 @@
 Title: Link Roundup #3
 Slug: link-roundup-3
 Date: 2012-05-14 16:06
-Category: texts
+Category: links
 Tags: roundup
 Lang: ru
 

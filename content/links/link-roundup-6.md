@@ -25,7 +25,7 @@ Lang: ru
 
 ### Databases
 
-* Про новый [Aggregation Framework](blog.pythonisito.com/2012/06/using-mongodbs-new-aggregation.html), который появился в MongoDB с версии 2.1.
+* Про новый [Aggregation Framework](http://blog.pythonisito.com/2012/06/using-mongodbs-new-aggregation.html), который появился в MongoDB с версии 2.1.
 * [Ming](http://blog.pythonisito.com/2012/06/schema-maintenance-with-ming-and.html) — object-mappert для MongoDB, написанный в Sourceforge. Довольно занятная штука, надо попробовать.
 * [Туториал](http://merciless.sourceforge.net/odm.html) по более высокоуровнему интерфейсу Ming для маппинга python объектов на MongoDB документы.
 * Про новую [гугловую базу F1](http://static.googleusercontent.com/external_content/untrusted_dlcp/research.google.com/en//pubs/archive/38125.pdf). По сути, это NOSQL хранилище c автоматическим шардингом, над которым накручена SQL прокся.

@@ -10,3 +10,4 @@ pip-log.txt
 ctags
 .vim/ide.session
 *.egg-info
+journal.md

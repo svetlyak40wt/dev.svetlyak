@@ -28,8 +28,8 @@ Lang: ru
 Разное
 ------
 
-* Разгребая вимовый конфиг, выделил небольшую, но весьма полезную его часть в отдельный плагин — vim-local-settings: http://bit.ly/PY3gaV #vim
-* http://resume.github.com/ — использует API GitHub, чтобы показывать актуальное резюме. Вот, [к примеру, моё](http://resume.github.com/?svetlyak40wt). #services #github
+* Разгребая вимовый конфиг, выделил небольшую, но весьма полезную его часть в отдельный плагин — [vim-local-settings](http://bit.ly/PY3gaV) #vim
+* <http://resume.github.com/> — использует API GitHub, чтобы показывать актуальное резюме. Вот, [к примеру, моё](http://resume.github.com/?svetlyak40wt). #services #github
 * [Bucky](https://github.com/cloudant/bucky) — прокси между collectd или statsd и graphite. #admin
 * [Collectd-carbon](https://github.com/indygreg/collectd-carbon) — плагинчик для collectd, который умеет писать данные в Graphite. Сам плагин написан на Python. Есть аналоги [на C](https://github.com/jssjr/collectd-write_graphite) и [Perl](https://github.com/joemiller/collectd-graphite) и [Node.js](https://github.com/loggly/collectd-to-graphite), но Python как-то родней. #python #monitoring #admin
 

@@ -22,7 +22,7 @@ Lang: ru
 
 * Старая статья с "A List Apart" про то, как правильно верстать, [соблюдая вертикальный ритм](http://www.alistapart.com/articles/settingtypeontheweb/). #css
 * [Rickshaw](http://code.shutterstock.com/rickshaw/) — бесплатная JS библиотечка для рисования симпатичных графиков. #js
-* [3Djs](http://d3js.org/) еще одна JS библиотечка для красивой визуализации данных. А тут — [кучка демок](https://github.com/mbostock/d3/wiki/Gallery), сделанных на ней. Особенно [вот эта](http://mbostock.github.com/d3/talk/20111018/collision.html) мне нравится. #js
+* [D3js](http://d3js.org/) еще одна JS библиотечка для красивой визуализации данных. А тут — [кучка демок](https://github.com/mbostock/d3/wiki/Gallery), сделанных на ней. Особенно [вот эта](http://mbostock.github.com/d3/talk/20111018/collision.html) мне нравится. #js
 * [What The Key Code](http://whatthekeycode.com/) — веб-апп, показывающий код любой нажатой клавиши. Наверное полезно для описания хоткеев в JS. #js #webapp
 
 Разное

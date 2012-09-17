@@ -15,7 +15,7 @@ Lang: ru
 * Статья самого Сальваторе, специально [для тех, кто хочет попробовать Redis](http://antirez.com/post/take-advantage-of-redis-adding-it-to-your-stack.html), но не знает зачем он ему мог бы пригодится. Автор описывает множество паттернов, где Redis мог бы быть полезен, даже не являясь основной базой данных. #redis #db #nosql
 * Пара забавных и местами полезных Python модулей от Кеннета Рейца: [env](https://github.com/kennethreitz/env) и [args](https://github.com/kennethreitz/args). Первый преобразует переменные окружения с заданным префиксом — в словарь. Второй — автоматически разбирает аргументы командной строки, наверное хорош для мелких скриптов. #python
 * Полезная заметка про то, [как улучшить качество жизни, если вы используете Nose](http://blog.mozilla.org/webdev/2011/04/14/a-humane-python-test-runner/) для запуска юнит-тестов. Я вот не знал про [nose-progressive](http://pypi.python.org/pypi/nose-progressive/). #python
-* [Django-waffle](remotes/my/feature/option-after) — развесистый feature-flipper для Django проектов. Как раз думаю реализовать нечто подобное для gitorama.com, который у меня на Flask написан. #django
+* [Django-waffle](https://github.com/jsocol/django-waffle) — развесистый feature-flipper для Django проектов. Как раз думаю реализовать нечто подобное для gitorama.com, который у меня на Flask написан. #django
 
 Разное
 ------

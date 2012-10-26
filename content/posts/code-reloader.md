@@ -25,6 +25,7 @@ Lang: ru
 теперь он может обновлять сам себя по коммиту в GitHub. Чекаутить изменения, устанавливать
 новые зависимости прогонять тесты, и только потом уже перезагружаться:
 
+    :::python
     def on_push_to_the_github_master_branch():
         make_git_pull()
         run_pip_install()

@@ -7,7 +7,7 @@ def dev():
 
 def production():
     env.environment = 'production'
-    env.hosts = ['amazon']
+    env.hosts = ['svetlyak.ru']
 
 
 def setup():
@@ -25,6 +25,10 @@ def setup():
 def deploy():
     local('env/bin/pelican -s {0}.conf content'.format(env.environment))
 
+    server = env.hosts[0]
     if env.environment == 'production':
-        local("rsync -avz --exclude .sass-cache --exclude '.*.swp' --exclude 'theme/src' output/ amazon:www/dev.svetlyak/www/")
-        local("rsync -avz --exclude '.*.swp' configs/ amazon:www/dev.svetlyak/configs/")
+        local("rsync -avz --exclude .sass-cache --exclude '.*.swp' "
+              "--exclude 'theme/src' "
+              "output/ {0}:www/dev.svetlyak/www/".format(server))
+        local("rsync -avz --exclude '.*.swp' "
+              "configs/ {0}:www/dev.svetlyak/configs/".format(server))

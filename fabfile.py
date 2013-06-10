@@ -22,7 +22,7 @@ def setup():
     upstart_ensure('nginx')
 
 
-def deploy():
+def do_release():
     local('env/bin/pelican -s {0}.conf content'.format(env.environment))
 
     server = env.hosts[0]

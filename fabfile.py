@@ -23,6 +23,9 @@ def setup():
 
 
 def do_release():
+    if not getattr(env, 'environment', None):
+        production()
+        
     local('env/bin/pelican -s {0}.conf content'.format(env.environment))
 
     server = env.hosts[0]

@@ -10,7 +10,7 @@ Lang: ru
 Разработка
 ----------
 
-* [Django-limehouse](https://github.com/sebleier/django-limehouse) — приложение для рендеринга частей страницы на клиенте, с использованием JS реализации джканговских шаблонов [Plate](https://github.com/chrisdickinson/plate). #django #python
+* [Django-limehouse](https://github.com/sebleier/django-limehouse) — приложение для рендеринга частей страницы на клиенте, с использованием JS реализации джанговских шаблонов [Plate](https://github.com/chrisdickinson/plate). #django #python
 * [Redis Cookbook](http://rediscookbook.org/index.html) — небольшая коллекция рецептов касательно #redis
 * Статья самого Сальваторе, специально [для тех, кто хочет попробовать Redis](http://antirez.com/post/take-advantage-of-redis-adding-it-to-your-stack.html), но не знает зачем он ему мог бы пригодится. Автор описывает множество паттернов, где Redis мог бы быть полезен, даже не являясь основной базой данных. #redis #db #nosql
 * Пара забавных и местами полезных Python модулей от Кеннета Рейца: [env](https://github.com/kennethreitz/env) и [args](https://github.com/kennethreitz/args). Первый преобразует переменные окружения с заданным префиксом — в словарь. Второй — автоматически разбирает аргументы командной строки, наверное хорош для мелких скриптов. #python

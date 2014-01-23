@@ -1,6 +1,3 @@
-* [django-salted](https://github.com/wunki/django-salted/) — набор скриптов и конфигов, чтобы бsстро поднимать разработческие виртуалки под Vagrant, с использованием Salt. #django #python #develop
-* Новый сайт [для ищущих работу Django](http://djangojobbers.com/) разработчиков. #python #develop #django
-* Статья про то, [как интегрировать emacs и движок для блога Pelican](http://www.ian-barton.com/posts/2013/Apr/06/blogging-with-emacs-org-mode-and-pelican/). #python #emacs
 * [Flocktory.com](https://flocktory.com/) — сервис для проведения реферральных маркетинговых компаний. Это такие компании, когда ваши клиенты спамят своих друзей, и получают за это бонусы :) #misc
 * Очередной доклад Брета Виктора. [Про программирование](https://vimeo.com/71278954). Пересматривать до наступления просветления. #develop
 * [Storm](http://storm-project.net/) — потоковая распределенная молотилка данных. Посмотрел на туториал, увидел сниппеты на Java, ужаснулся, закрыл. Пока не надо, но мало ли когда пригодится. #java #develop
@@ -78,9 +75,7 @@
 
 * Reading: [(Saving...)](http://ycombinator.com/arc/tut.txt) -  Туториал по диалекту Lisp — Arc. Читал с упоением. Обязательно попробую на какой-нибудь небольшой задачке. #lisp #develop
 
-* Reading: [Recipes with Angular.js - Sharing Code Between Controllers using Services](http://fdietz.github.io/recipes-with-angular-js/controllers/sharing-code-between-controllers-using-services.html) -  Полезные рецепты для AngularJS. #javascript #frontend
 
-* Reading: [Analytics for GitHub - Bitdeli](https://bitdeli.com/) -  Случайно в одном из репозиториев гитхаба, наткнулся на бейджик этого сервиса. Это специальизированный сервис для сбора статистики о проектах на гитхабе. У них в бложике постик есть [с более подробными объяснениями](http://blog.bitdeli.com/post/40662381394/github-analytics-free-bitdeli-account). #misc
 
 * Reading: [orf/django-debug-toolbar-template-timings](https://github.com/orf/django-debug-toolbar-template-timings) -  Полезная панель к Django Debug Toolbar, позволяющая профилировать рендеринг шаблонов. #django #python
 

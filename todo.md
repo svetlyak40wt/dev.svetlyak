@@ -22,7 +22,6 @@
 * Нашел [django-vanilla-views](http://django-vanilla-views.org/). Это реализация class-based вьюшек, но без излишней сложности, присущей джанговой версии. Надо будет попробовать во время Django Dash. #django #develop
 * Нашел блог чувака, стоящего за Fabric. Он тоже озаботился проблемой ченьджлогов, и 14 сентября опубликовал такую заметку: http://bitprophet.org/blog/2013/09/14/a-better-changelog/ #develop #python
 * Чувака зовут Jeff Forcier #develop
-* [Куча материалов по Emacs](http://www.emacs.uniyar.ac.ru/) на сервере ярославского государственного университета. Там есть pdf книги, конкретно я искал "Writing GNU Emacs Extensions". #emacs #misc
 * Из переписки Ian Bicking в гугльплюсе, нашел для себя интересный сервис [stackanalytics.com](http://stackalytics.com/). Это дэшборд для оценки вклада разных людей и компаний в OpenStack. Кстати, код самого dashboard так же [доступен на github](https://github.com/stackforge/stackalytics). #misc
 * Знали ли вы, что GitHub регулярно отгружает публичные данные в Google BigQuery? И можно туда делать разные [запросики, например так](http://p10q.com/old-blog/posts/2013/01/fun-way-to-discover-libraries-in-a-particular.html). #misc
 * [Cookiecutter](https://github.com/audreyr/cookiecutter) — утилитка, которая умеет скачивать git репозиторий, спрашивать значения разных переменных, а затем подставлять эти переменные в имена и содержимое файлов. Таким образом удобно создавать скелеты разных модулей. #develop
@@ -62,8 +61,6 @@
 * Reading: [Tulip: Async I/O for Python 3 - YouTube](http://www.youtube.com/watch?v=1coLC-MUCJc) -  Часовой доклад Гвидо, где он объясняет, как работает asyncio в Python > 3.3 #python
 
 * Reading: [Must Have Git Aliases: Advanced Examples - be present now](http://durdn.com/blog/2012/11/22/must-have-git-aliases-advanced-examples/) -  Куча алиасов для Git. Я о таких даже и думать не думал! #git #misc
-
-* Reading: [What’s New In Emacs 24.4 | Mastering Emacs](http://www.masteringemacs.org/articles/2013/12/29/whats-new-in-emacs-24-4/) -  Длинный обзор новых фич в Emacs 24.4. #misc
 
 * Reading: [Function Cells and Value Cells](http://www.dreamsongs.com/Separation.html) -  Уже который день читаю урывками про разницу между Lisp1 и Lisp2: http://www.dreamsongs.com/Separation.html пока так и не решил для себя, что же лучше. #lisp #devel
 

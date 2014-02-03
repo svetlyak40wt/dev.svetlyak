@@ -1,6 +1,6 @@
 Title: Как правильно управлять конфигами?
 Slug: dotfiler
-Date: 2013-02-01 18:00
+Date: 2014-02-01 18:00
 Category: texts
 Tags: tools
 Lang: ru

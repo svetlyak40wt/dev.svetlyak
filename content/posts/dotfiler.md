@@ -23,38 +23,36 @@ Lang: ru
 
 Итак, приступим:
 
-```
-$ git clone https://github.com/svetlyak40wt/dotfiler .dotfiles
-$ export PATH=~/.test-dotfiles/bin:$PATH
-$ dot add https://github.com/svetlyak40wt/dot-zsh
-$ mkdir test-home
-$ dot update --home-dir=`pwd`/test-home
-LINK          Symlink from /Users/art/test-home/.bash_profile to /Users/art/.dotfiles/zsh/.bash_profile was created
-LINK          Symlink from /Users/art/test-home/.zsh to /Users/art/.dotfiles/zsh/.zsh was created
-LINK          Symlink from /Users/art/test-home/.zshrc to /Users/art/.dotfiles/zsh/.zshrc was created
-```
+    :::bash
+    $ git clone https://github.com/svetlyak40wt/dotfiler .dotfiles
+    $ export PATH=~/.test-dotfiles/bin:$PATH
+    $ dot add https://github.com/svetlyak40wt/dot-zsh
+    $ mkdir test-home
+    $ dot update --home-dir=`pwd`/test-home
+    LINK   Symlink from /Users/art/test-home/.bash_profile to /Users/art/.dotfiles/zsh/.bash_profile was created
+    LINK   Symlink from /Users/art/test-home/.zsh to /Users/art/.dotfiles/zsh/.zsh was created
+    LINK   Symlink from /Users/art/test-home/.zshrc to /Users/art/.dotfiles/zsh/.zshrc was created
 
 ![](http://img-fotki.yandex.ru/get/9895/13558447.f/0_aa14f_4f5befb1_L.jpg)
 
 На этом рисунке видно, что мы склонировали окружение с конфигами для zsh. Их много, но dotfiler залинковал только `.zsh` и `.zshrc`, чтобы не делать лишней работы. 
 
-```
-$ dot add svetlyak40wt/dot-tmux
-$ dot update --home-dir=`pwd`/test-home                                                                                 b:master s:
-LINK  Symlink from /Users/art/test-home/.bin to /Users/art/.dotfiles/tmux/.bin was created
-LINK  Symlink from /Users/art/test-home/.tmux.conf to /Users/art/.dotfiles/tmux/.tmux.conf was created
-RM    Symlink /Users/art/test-home/.zsh was removed.
-MKDIR Directory /Users/art/test-home/.zsh was created.
-LINK  Symlink from /Users/art/test-home/.zsh/00-options to /Users/art/.dotfiles/zsh/.zsh/00-options was created
-LINK  Symlink from /Users/art/test-home/.zsh/01-prompt-functions to /Users/art/.dotfiles/zsh/.zsh/01-prompt-functions was created
-LINK  Symlink from /Users/art/test-home/.zsh/02-prompt-colors to /Users/art/.dotfiles/zsh/.zsh/02-prompt-colors was created
-LINK  Symlink from /Users/art/test-home/.zsh/03-prompt to /Users/art/.dotfiles/zsh/.zsh/03-prompt was created
-LINK  Symlink from /Users/art/test-home/.zsh/aliases to /Users/art/.dotfiles/zsh/.zsh/aliases was created
-LINK  Symlink from /Users/art/test-home/.zsh/ash to /Users/art/.dotfiles/zsh/.zsh/ash was created
-LINK  Symlink from /Users/art/test-home/.zsh/dotfiler to /Users/art/.dotfiles/zsh/.zsh/dotfiler was created
-LINK  Symlink from /Users/art/test-home/.zsh/ssh-agent to /Users/art/.dotfiles/zsh/.zsh/ssh-agent was created
-LINK  Symlink from /Users/art/test-home/.zsh/tmux to /Users/art/.dotfiles/tmux/.zsh/tmux was created
-```
+    :::bash
+    $ dot add svetlyak40wt/dot-tmux
+    $ dot update --home-dir=`pwd`/test-home                                                                                 b:master s:
+    LINK  Symlink from /Users/art/test-home/.bin to /Users/art/.dotfiles/tmux/.bin was created
+    LINK  Symlink from /Users/art/test-home/.tmux.conf to /Users/art/.dotfiles/tmux/.tmux.conf was created
+    RM    Symlink /Users/art/test-home/.zsh was removed.
+    MKDIR Directory /Users/art/test-home/.zsh was created.
+    LINK  Symlink from /Users/art/test-home/.zsh/00-options to /Users/art/.dotfiles/zsh/.zsh/00-options was created
+    LINK  Symlink from /Users/art/test-home/.zsh/01-prompt-functions to /Users/art/.dotfiles/zsh/.zsh/01-prompt-functions was created
+    LINK  Symlink from /Users/art/test-home/.zsh/02-prompt-colors to /Users/art/.dotfiles/zsh/.zsh/02-prompt-colors was created
+    LINK  Symlink from /Users/art/test-home/.zsh/03-prompt to /Users/art/.dotfiles/zsh/.zsh/03-prompt was created
+    LINK  Symlink from /Users/art/test-home/.zsh/aliases to /Users/art/.dotfiles/zsh/.zsh/aliases was created
+    LINK  Symlink from /Users/art/test-home/.zsh/ash to /Users/art/.dotfiles/zsh/.zsh/ash was created
+    LINK  Symlink from /Users/art/test-home/.zsh/dotfiler to /Users/art/.dotfiles/zsh/.zsh/dotfiler was created
+    LINK  Symlink from /Users/art/test-home/.zsh/ssh-agent to /Users/art/.dotfiles/zsh/.zsh/ssh-agent was created
+    LINK  Symlink from /Users/art/test-home/.zsh/tmux to /Users/art/.dotfiles/tmux/.zsh/tmux was created
 
 ![](http://img-fotki.yandex.ru/get/9314/13558447.f/0_aa150_6aa53046_L.jpg)
 
@@ -64,7 +62,7 @@ LINK  Symlink from /Users/art/test-home/.zsh/tmux to /Users/art/.dotfiles/tmux/.
 
 Разумеется, вся логика покрыты тестами. Но гонялись они пока только на python 2.7. Если будут проблемы, файлите ишьюсы, реквесьте пуллы :)
 
-P. S. - маленькая хитрость для тех, кто дочитал. Команда dot add может принимать более одной ссылки на реаозитьрий.  
-P. P. S. - зацепите команду dot status, она тоже клевая!
+P.S. — маленькая хитрость для тех, кто дочитал. Команда `dot add` может принимать более одной ссылки на репозиторий.  
+P.P.S. — зацепите команду `dot status`, она тоже клевая!
 
 [dotfiler]: https://github.com/svetlyak40wt/dotfiler

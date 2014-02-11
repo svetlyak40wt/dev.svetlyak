@@ -63,7 +63,7 @@ Nobody do this. Nobody!
 
 All logic is written and unittested in Python 2.7. I'm planning to add this project on Travis, to be able to test it under different pythons. If you find any bugs, don't hesitate to [issue them in the GitHub](https://github.com/svetlyak40wt/dotfiler/issues) or even to send me a pull request.
 
-P.S. A small hint for those who read through the whole article, command `dot add` is able to get more than one repository at once.
+P.S. A small hint for those who read through the whole article, command `dot add` is able to get more than one repository at once.  
 P.P.S. Also, take look at `dot status`, it is cool!
 
 [dotfiler]: https://github.com/svetlyak40wt/dotfiler

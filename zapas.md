@@ -25,3 +25,55 @@
 #develop #go
 * Про [использование format](http://lisper.ru/pcl/a-few-format-recipes) в lisp. Разные примеры и описание возможностей. На русском. #lisp
 * Допилил скрипт, устанавливающий Graphite: https://github.com/svetlyak40wt/graphite-node на Ubuntu Precise заводится без всяких усилий! #develop #monitoring
+* Reading: [Quickstart — dataset 0.3 documentation](http://dataset.readthedocs.org/en/latest/quickstart.html) -  Отличная обертка над SQLAlchemy, делающая работу с sql базами простой и даже в каком-то смысле приятной. Замечательно подходит для простых случаев использования и не требует жестко задавать схему, делая необходимые ALTER налету! #sql #python #develop
+
+* Reading: [Python on Wheels | Armin Ronacher's Thoughts and Writings](http://lucumr.pocoo.org/2014/1/27/python-on-wheels/) -  Свежий пост Армина Роначера про то, как использовать новый формат python пакетов wheel для деплоймента. #python #develop
+
+* Reading: [Ahrefs Site Explorer & Backlink Checker](https://ahrefs.com/) -  Зарегался на сайте ahrefs.com — аналитика для сеошников. Нашел его в access логах make-me-pizza.ru #misc #seo
+
+* Reading: [ZSH-LOVERS(1)](http://grml.org/zsh/zsh-lovers.html) -  Туториал по zsh, фактически состоящий из одних примеров. #zsh #dotfiles
+
+* Reading: [ThriftDB - Flexible datastore with search built-in](http://www.thriftdb.com/) -  ThriftDB — документоориентированная база данных со встроенным полнотекстовым поиском. Пока что это облачное решение, локально установить нельзя, но разработчики уверяют, что они работают над этим. #nosql #thriftdb #develop
+
+* Reading: [Hacker News Data Analysis: 2014 Edition - Ecommerce Blog](http://blog.rjmetrics.com/2014/01/23/hacker-news-data-analysis-2014-edition/) -  Очень подробный анализ пользовательской активности на Hacker News. #misc #startups
+
+* Reading: [The Best Time to Post on Hacker News | Rant / Code / Rant](http://nathanael.hevenet.com/the-best-time-to-post-on-hacker-news-a-comprehensive-answer/) -  Только хотел написать скрипт, который бы рассчитал наиболее правильное время для постинга на Hacker News, как наткнулся на эту статью, в которой чувак уже сделал подобный анализ. Единственное, чего там нет, так это учета дня недели. #misc
+
+* Reading: [Hacker News API - Unofficial Hacker News JSON API](http://hndroidapi.appspot.com/) -  Еще одно API для доступа к данным с Hacker News. #misc
+
+* Reading: [Arc Forum | I just use system to call sendmail (postfix). Here's how it looks in readwarp. ...](http://arclanguage.org/item?id=14622) -  Пример того, как отправлять почту через sendmail из Arc. #arc #lisp
+
+* Установил в emacs geiser — модуль типа Slime, но для Scheme/Racket. #develop
+
+* Reading: [A Startup's Guide to Hiring](http://blog.sourcing.io/startups-hiring-guide) -  Правильная статья про то, как нанимать айтишников. Особенно мне понравилось Воскресное Правило, надо бы тоже взять на вооружение. #misc
+
+* Гитхабовцы здорово улучшили возможности по настройке и отладке вебхуков! https://github.com/blog/1778-webhooks-level-up #misc #github
+
+* (https://circleci.com/) — платный continuous integration сервер в облаке. Для закрытых проектов, которым не годится Travis, самое оно, наверное. #misc #startups
+
+* Длинный пост Яна Байкинга (Ian Bicking) о том, как он перестал писать на Python и ушел в Mozilla работать над Together.js: http://www.ianbicking.org/blog/2014/02/saying-goodbye-to-python.html #python #misc
+
+* Вышел мажорный релиз ElasticSearch — [1.0.0](http://www.elasticsearch.org/blog/1-0-0-released/). Есть пара полезных фич, например API для бэкапа и восстановления. #develop #search
+
+* Hemingwayapp.com — сервис (и приложение), [для полуавтоматической коррекции текстов](http://www.hemingwayapp.com/). Помогает упростить обороты речи и улучшить читаемость. Эдакий lint для человеческих текстов. С русским работает лишь чуть — может подсказывать когда предложения становятся слишком длинны. #misc #startups
+
+* Узнал тут про существование такой опасной вещи, как bitsquating. Это когда регистрируют домен, [похожий на популярный, но отличающийся](http://dinaburg.org/bitsquatting.html) одним битом. Полагаются тут не на опечатки пользователей, а на ошибки железа. Оказывается такое бывает вполне себе часто. #security #misc
+
+* Армин Роначер (Armin Ronacher) написал о том, [как ему жаль, что Postgres не поддерживает upsert](http://lucumr.pocoo.org/2014/2/16/a-case-for-upserts/) и выразил недоумение по поводу того, почему это мало кого волнует. #postgres #develop
+
+* (https://github.com/SnabbCo/snabbswitch/wiki) — тулза которая позволяет с бешенной скоростью обрабатывать сетевые пакеты. Кастомизируется на lua. #misc #networking #lua
+
+* На кикстартере собирают деньги [на расширенную поддержку PostgreSQL в Django](https://www.kickstarter.com/projects/mjtamlyn/improved-postgresql-support-in-django). Так сложилось, что сам я постгреса касался лишь единожды, и тогда увидев его проблемы с репликацией, решил держаться от этого чуда подальше. Но теперь там вроде всё хорошо с этим, может стоит попробовать снова? #develop #postgres
+
+* (http://www.groovehq.com/blog/the-software-stack), позволяющая потестить некоторые SaaS сервисы в течении 3 месяцев бесплатно. #misc
+
+* Блог Конана Далтона про язык Arc. В основном, он там пишет [про то, как синтезировать музыку на Lisp](http://www.fnargs.com/). #lisp #arc #develop
+
+* Три года назад один чувак написал [тулзу, которая снифает MySQL трафик](http://yoshinorimatsunobu.blogspot.ru/2011/04/tracking-long-running-transactions-in.html) и показывает долгие транзакции. Пока не пробовал, но возможно пригодится. Утилитку можно [скачать с GitHub](https://github.com/yoshinorim/MySlowTranCapture). #develop #mysql
+
+* Аддон к vagrant, который автоматически обновляет Guest Additions: https://github.com/dotless-de/vagrant-vbguest #misc
+
+* (https://www.flowdock.com/) сервис для командного взаимодействия — чатик и обмен документами. #startups #misc
+
+* (https://github.com/trustedsec/artillery) — средство обнаружения проникновений (HIDS), написанное на Python. Пока фукционал весьма прост. #misc #python
+

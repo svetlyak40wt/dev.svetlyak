@@ -13,4 +13,4 @@ Diff could be showed manually, but also, you could write this line in the config
 
 And then diff will be opened automatically after the `git commit`.
 
-This tip was found in the [Vim Recipes](http://vim.runpaint.org/extending/integrating-vim-with-git/) ebook.
+This tip was found in the [Vim Recipes](https://github.com/runpaint/vim-recipes/blob/master/text/11_extending/05_integrating_vim_with_git.html) ebook.

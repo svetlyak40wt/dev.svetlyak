@@ -13,4 +13,4 @@ Lang: ru
 
 И тогда дифф будет открываться автоматически после запуска `git commit`.
 
-Этот хинт я почерпнул из книги [Vim Recipes](http://vim.runpaint.org/extending/integrating-vim-with-git/).
+Этот хинт я почерпнул из книги [Vim Recipes](https://github.com/runpaint/vim-recipes/blob/master/text/11_extending/05_integrating_vim_with_git.html).

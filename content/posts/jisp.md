@@ -15,25 +15,25 @@ Lang: ru
 
 Итак, зачем на фронтенде lisp? Затем, что он позволяет более гибко создавать абстракции и код становится более читаемым. Вот пример из кода, что я переписал на днях. В небольшом проекте я использую [angular.js][], и все мои контролы выглядят примерно так:
 
-```
-the_app.controller(
-    'SearchCtrl',
-    ['$scope', '$http',
-     function ($scope, $http) {
-         $http.get('/api/search/').success(function(data) {
-             $scope.results = data;
-         });
-     }]);
-```
+
+    :::lisp
+    the_app.controller(
+        'SearchCtrl',
+        ['$scope', '$http',
+         function ($scope, $http) {
+             $http.get('/api/search/').success(function(data) {
+                 $scope.results = data;
+             });
+         }]);
+    
 
 
 Благодаря паре макросов, читать код сталновится гораздо проще:
 
-```
-(controller "SearchCtrl" ($scope $http)
-            (http_get "/api/search/"
-                      (= $scope.results data)))
-```
+    :::lisp
+    (controller "SearchCtrl" ($scope $http)
+                (http_get "/api/search/"
+                          (= $scope.results data)))
 
 Вся эта портянка из калбэков, не несущая бизнес-логики теперь скрыта и не мешает читать действительно важный код.
 По-моему, это прекрасно!

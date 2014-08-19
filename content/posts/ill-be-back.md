@@ -62,3 +62,5 @@ System Preferences -> Sharing
     ./manage.py long-running-command; nb DONE
 
 А в качестве бонуса получаете возможность легко и просто отправлять файлы с сервера на десктоп через `scp some-file back:`.
+
+Кстати, скриптик этот доступен, [как модуль](https://github.com/svetlyak40wt/dot-growl) для моего [dotfiler](https://github.com/svetlyak40wt/dotfiler).

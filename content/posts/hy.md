@@ -9,7 +9,7 @@ Lang: ru
 
 Замечателен этот проект тем, что:
 
-a) там, как и во многих лиспах, есть нормальные макросы;
+a) там, как и во многих лиспах, есть нормальные макросы;  
 б) у него полная интеграция с питоном.
 
 Что это значит.
@@ -22,8 +22,6 @@ a) там, как и во многих лиспах, есть нормальны
 
 Да, мне тут в #Hy канале на freenode, накидали ссылок на проектики, написанные на `Hy`:
 
-<ul>
-<li>https://github.com/algernon/hydiomatic — статический анализатор программ, написанных на <code>Hy</code>;</li>
-<li>https://github.com/tuturto/pyherc> — приключенческая игра типа Rogue;</li>
-<li>https://github.com/nathanielksmith/prosaic — сервис, перерабатывающий прозу в стихи.</li>
-</ul>
+* <https://github.com/algernon/hydiomatic> — статический анализатор программ, написанных на <code>Hy</code>;
+* <https://github.com/tuturto/pyherc> — приключенческая игра типа Rogue;
+* <https://github.com/nathanielksmith/prosaic> — сервис, перерабатывающий прозу в стихи.
